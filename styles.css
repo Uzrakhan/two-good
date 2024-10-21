@@ -222,13 +222,6 @@ body{
     line-height: 10px;
 }
 
-#page4 .first{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 25px;
-    font-size: 16px;
-}
 
 
 
@@ -368,7 +361,16 @@ body{
     z-index: 2;
 }
 
-
-
+#page4{
+    min-height: 90vh;
+    width: 100%;
+    padding: 0 2.5vw;
+    padding-top: 5vh;
+}
     
+#page4 h1{
+    font-size: 5vw;
+    line-height: 1vw;
+    letter-spacing: -2px;
+ }
 }
