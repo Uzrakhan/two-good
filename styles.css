@@ -54,7 +54,7 @@ body{
     text-transform: uppercase;
     text-decoration: none;
     color: #333;
-    font-weight: 500px;
+    font-weight: 500;
     font-size: 14px;
     margin: 0px 20px;
 }
@@ -70,9 +70,9 @@ body{
     font-weight: 100;
 }
 #cursor{
-    height: 180px;
-    width: 180px;
-    background-color: blanchedalmond;
+    height: 150px;
+    width: 150px;
+    background-color: whitesmoke;
     border-radius: 50%;
     position: fixed;
     transform: translate(-50%, -50%) scale(0);
@@ -105,6 +105,7 @@ body{
     background-color: gray;
     margin-top: 1vw;
     position: relative;
+    margin-bottom: 5vw;
 }
 
 #video-container video{
@@ -126,6 +127,18 @@ body{
     opacity: 0;
     scale: 0;
 }
+
+.text-container{
+    display: flex;
+    justify-content: space-between; /* Push the spans to opposite sides */
+    align-items: center; /* Align text vertically in the middle */
+    margin-bottom: 5px; /* Add space between text and the horizontal line */
+    text-transform: uppercase;
+}
+
+
+
+
 
 #page2{
     min-height: 100vh;
@@ -161,7 +174,7 @@ body{
     width: 70%;
     position: absolute;
     z-index: 9;
-    background-color: palegoldenrod;
+    background-color: pink;
 }
 
 #page2 .elem .dets:hover{
@@ -169,7 +182,7 @@ body{
 }
 
 #page3{
-    min-height: 120vh;
+    min-height: 200vh;
     width: 100%;
     background-color: #F7F7F7;
     position: relative;
@@ -177,17 +190,22 @@ body{
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    text-align: center;
+    margin-bottom: 50px;
 }
 
 
 
 .child{
-    height: 54vh;
-    width: 35vw;
+    height: 80vh;
+    width: 45vw;
+    margin: 10px;
+    text-align: center;
     /*background-color: red;*/
     /*border:  2px solid #000;*/
     position: relative;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     overflow: visible;
@@ -197,9 +215,31 @@ body{
 
 
 .child img{
+    max-width: 100%;
     height: 100%;
     object-fit: contain;
-    z-index: 2;
+    z-index: 1;
+}
+
+.child .details-prod{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.details-prod h3{
+    font-size: 12px;
+    font-weight: 100;
+}
+
+.details-prod span{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 13.6px;
+    margin-top: 10px;
 }
 
 /*#page4{
@@ -227,7 +267,7 @@ body{
 #page4 {
     min-height: 100vh;
     padding-top: 10px;
-    padding-bottom: 100px;
+    padding-bottom: 200px;
     /*background-color: red;*/
     box-sizing: border-box;
     width: 100%;
@@ -241,10 +281,10 @@ body{
 #page4 .first{
     text-align: left;
     font-family: futura;
-    font-size: 5.5vw;
+    font-size: 5.3vw;
     font-weight: bold;
     text-transform: uppercase;
-    margin-left: 10px;
+    margin-left: 5px;
     margin-bottom: 40px;
 }
 #para{
@@ -252,6 +292,33 @@ body{
     display: flex;
     flex-direction: column;
 }
+
+#para .sec{
+    font-size: 5px;
+    margin-top: -10px;
+    line-height: 25px;
+}
+
+#para .thir{
+    font-size: 5px;
+    line-height: 25px;
+
+}
+
+#para a{
+    font-size: 1.5vw; /* Relative font size */
+    text-decoration: none;
+    color: #000;
+    justify-content: center;
+    text-align: left;
+    width: 50%;
+    margin-bottom: 40px;
+    font-size: 1.4vw; /* Relative font size */
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 10vw;
+}
+
+
 /*#para .sec{
     text-align: left;
     width: 50%;
@@ -271,16 +338,143 @@ body{
 }
     */
 
-#para .sec, #para .thir {
+#para .sec, #para .thir{
     justify-content: center;
     text-align: left;
     width: 50%;
-    margin-bottom: 20px;
-    font-size: 1.5vw; /* Relative font size */
+    margin-bottom: 40px;
+    font-size: 1.4vw; /* Relative font size */
     font-family: Arial, Helvetica, sans-serif;
     margin-left: 10vw;
 }
 
+#message{
+    height: 150vh;
+    width: 100%;
+    background-color:#F7F7F7;
+    padding: 10px;
+}
+
+.text-container{
+    display: flex;
+    justify-content: space-between; /* Push the spans to opposite sides */
+    align-items: center; /* Align text vertically in the middle */
+    margin-bottom: 5px; /* Add space between text and the horizontal line */
+    text-transform: uppercase;
+}
+
+.text-container .left-text {
+    padding-left: 10px;
+    font-size: 12px; /* Adjust font size if necessary */
+}
+  
+.text-container .right-text {
+    padding-right: 10px;
+    font-size: 12px; /* Adjust font size if necessary */
+  }
+
+.text-container hr {
+    border-bottom:10px solid #000; /* Set the color and thickness of the line */
+    width: 100%; /* Adjust the width */
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+
+.msg{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10vw;
+}
+
+.msg h1{
+    text-transform: uppercase;
+    font-size: 5.7vw;
+    font-family: futura;
+}
+
+
+
+.send-msg{
+    padding-bottom: 50px;
+}
+
+#page5{
+    min-height: 150vh;
+    width: 100%;
+    background-color: #F7F7F7;
+    position: relative;
+    display: flex;
+    padding: 3vw 3vw;
+    justify-content: space-between; /* Space between title and images */
+    align-items: flex-start; /* Align items to the start vertically */
+
+}
+
+.impact {
+    flex: 1;
+    align-self: flex-start; /* Align title to the left */
+    margin-right: 90px; /* Space between title and images */
+
+}
+
+.impact h1{
+    text-transform: uppercase;
+    font-size: 2.5vw;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.impact .fourth{
+    font-size: 1.3vw;
+    margin-bottom: 35px;
+}
+
+.impact .fifth{
+    font-size: 1.3vw;
+    margin-bottom: 35px;
+    line-height: 25px;
+    text-align: left;
+}
+
+.impact .sixth{
+    font-size: 1.3vw;
+    margin-bottom: 35px;
+    text-align: left;
+    line-height: 25px;
+}
+
+
+.imp {
+    /*display: flex; /* Use flexbox for layout 
+    justify-content: flex-start; /* Align images to the right */
+    /*gap: 20px; Optional: add space between images */
+
+    height: 100%;
+    width: 60 vw;
+    /*background-color: red;*/
+    overflow: hidden;
+    position: relative;
+    display: flex; /* Use flexbox for layout */
+    justify-content: flex-start; /* Align images to the right */
+    gap: 30px; /* Optional: add space between images */
+}
+
+
+#img1 img, #img2 img {
+    /*width: 30vw; /* Make images responsive */
+    /*height: auto; /* Maintain aspect ratio */
+    /*display: block; /* Remove bottom space */
+    position: relative;
+    height: auto;
+    width: 30vw;
+    object-fit: cover;
+    scale: 1;
+}
 
 
 @media (max-width: 600px) {
