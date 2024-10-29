@@ -93,6 +93,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    margin-bottom: 5vw;
 
 
 }
@@ -176,7 +177,7 @@ body{
 
 .child img{
     max-width: 100%;
-    height: 50%;
+    height: 100%;
     object-fit: contain;
     z-index: 1;
 }
@@ -201,3 +202,69 @@ body{
     font-size: 13.6px;
     margin-top: 10px;
 }
+
+
+.child-{
+    height: 80vh;
+    width: 45vw;
+    margin: 10px;
+    text-align: center;
+    /*background-color: red;*/
+    /*border:  2px solid #000;*/
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: visible;
+    z-index: 0; /* Ensure child elements don't overlap the cursor */
+
+}
+
+
+.child- img{
+    max-width: 80%;
+    height: 80%;
+    object-fit: contain;
+    z-index: 1;
+}
+
+.child- .details-prod{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.details-prod h3{
+    font-size: 12px;
+    font-weight: 100;
+}
+
+.details-prod span{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 13.6px;
+    margin-top: 10px;
+}
+
+.child- #text1{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10vw;
+    text-transform: uppercase;
+    font-size: 3vw;
+    font-family: futura;
+    font-weight: bold;
+}
+
+
+
+
+
+

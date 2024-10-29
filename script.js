@@ -103,6 +103,8 @@ function loadinganimation() {
         delay: 1.3,
         duration: 0.3
     })
+
+    
 }
 
 loadinganimation();
