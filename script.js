@@ -104,6 +104,13 @@ function loadinganimation() {
         duration: 0.3
     })
 
+    gsap.from("footer #editableLabel", {
+        y:100,
+        opacity:0,
+        delay: 0.5,
+        duration: 0.9,
+        stagger: 0.3
+    })
     
 }
 
@@ -136,4 +143,34 @@ function cursorAnimation() {
 
 cursorAnimation();
 
+
+function convertToInput() {
+    const label = document.getElementById('editableLabel');
+    const input = document.getElementById('editableInput');
+    const svg = document.getElementById('editableSvg');
+
+
+    // Hide the label and show the input
+    label.style.display = 'none';
+    svg.style.display = 'none'; // Hide the SVG
+    input.style.display = 'block';
+
+    // Focus on the input field
+    input.focus()
+}
+
+
+function toggleInput() {
+    const label = document.getElementById('editableLabel');
+    const input = document.getElementById('editableInput');
+    const svg = document.getElementById('editableSvg');
+
+    // If the input field is visible, hide it and show the label
+    if (input.style.display === 'block') {
+        label.style.display = 'block';
+        input.style.display = 'none';
+        svg.style.display = 'block';
+    }
+
+}
 
