@@ -74,17 +74,126 @@ function loadinganimation() {
         stagger: 0.3
     })
 
-    gsap.from(".child- p #text1", {
+    /*gsap.from(".child p", {
+
         y:100,
         opacity:0,
-        delay: 0.5,
+        delay: 2,
         duration: 0.9,
         stagger: 0.3
     })
+    */
 
+    gsap.from(".child img", {
+        scrollTrigger: {
+            trigger: ".child",
+            scroller: "#main",
+            start: "top 80%",
+            toggleActions: "play none none none"
+        },
+        opacity: 0,
+        y: 50,
+        duration: 1.5,
+        ease: "power2.out"
+    })
+
+    gsap.from(".row .child- img", {
+        scrollTrigger: {
+            trigger: ".row",
+            scroller: "#main",
+            start: "top 80%",
+            toggleActions: "play none none none"
+        },
+        opacity: 0,
+        y: 50,
+        duration: 3,
+        ease: "power2.out"
+    })
+
+
+
+
+
+    gsap.from(".child- #text1", {
+        scrollTrigger:{
+            trigger: ".child-",
+            scroller: "#main",
+            start: "top 80%",
+            toggleActions: "play none none none"
+        },
+        opacity: 0,
+        y: 50,
+        duration: 6,
+        ease: "power2.out"
+    })
+
+
+    gsap.from(".row1 .child- img", {
+        scrollTrigger: {
+            trigger: ".row1",
+            scroller: "#main",
+            start: "top 80%",
+            toggleActions: "play none none none"
+        },
+        opacity: 0,
+        y: 50,
+        duration: 6.5,
+        ease: "power2.out"
+    })
+
+    gsap.from(".row2 .child- img", {
+        scrollTrigger: {
+            trigger: ".row2",
+            scroller: "#main",
+            start: "top 80%",
+            toggleActions: "play none none none"
+        },
+        opacity: 0,
+        y: 50,
+        duration: 8,
+        ease: "power2.out"
+    })
+
+    gsap.from(".child- #text2", {
+        scrollTrigger:{
+            trigger: ".child-",
+            scroller: "#main",
+            start: "top 80%",
+            toggleActions: "play none none none"
+        },
+        opacity: 0,
+        y: 50,
+        duration: 9,
+        ease: "power2.out"
+    })
+
+    gsap.from(".row3 .child- img",{
+        scrollTrigger: {
+            trigger: ".row3",
+            scroller: "#main",
+            start: "top 80%",
+            toggleActions: "play none none none"
+        },
+        opacity: 0,
+        y: 50,
+        duration: 5,
+        ease: "power2.out"
+    })
+
+    gsap.from(".row4 .child- img", {
+        scrollTrigger:{
+            trigger: ".row4",
+            scroller: "#main",
+            start: "top 90%",
+            toggleActions: "play none none none"
+        },
+        opacity: 0,
+        y: 50,
+        duartion: 10,
+        ease: "power2.out"
+    })
     
 }
-
 loadinganimation();
 
 

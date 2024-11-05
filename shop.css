@@ -176,8 +176,8 @@ body{
 
 
 .child img{
-    max-width: 100%;
-    height: 100%;
+    max-width: 90%;
+    height: 90%;
     object-fit: contain;
     z-index: 1;
 }
@@ -203,32 +203,29 @@ body{
     margin-top: 10px;
 }
 
-
+/*
 .child-{
-    height: 80vh;
-    width: 45vw;
+    height: auto;
+    /*height: 80vh;*/
+    /*width: 45vw;*/
+    /*width: 30%;
     margin: 10px;
-    text-align: center;
-    /*background-color: red;*/
+    /*text-align: center;*/
+    /*background-color: red;
     /*border:  2px solid #000;*/
-    position: relative;
+    /*position: relative;
     display: flex;
-    flex-direction: column;
+    /*flex-direction: ;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     overflow: visible;
-    z-index: 0; /* Ensure child elements don't overlap the cursor */
+    z-index: 0; /* Ensure child elements don't overlap the cursor
+    */ 
 
-}
 
 
-.child- img{
-    max-width: 80%;
-    height: 80%;
-    object-fit: contain;
-    z-index: 1;
-}
 
+/*
 .child- .details-prod{
     display: flex;
     flex-direction: column;
@@ -250,7 +247,16 @@ body{
     margin-top: 10px;
 }
 
-.child- #text1{
+.child- img{
+    max-width: 100%;
+    height: 100%;
+    object-fit: contain;
+    z-index: 1;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.child- p{
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -262,9 +268,74 @@ body{
     font-family: futura;
     font-weight: bold;
 }
+*/
+.row{
+    background-color: #F7F7F7;
+    display: flex;
+    width: 100%;
+
+}
+
+.child-{
+    height: 90vh;
+    width: 45vw;
+    margin: 10px;
+    margin-top: 0;
+    text-align: center;
+    /*background-color: red;*/
+    /*border:  2px solid #000;*/
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: visible;
+    z-index: 0; /* Ensure child elements don't overlap the cursor */
+}
 
 
+.child- img{
+    max-width: 90%;
+    height: 90%;
+    object-fit: contain;
+    z-index: 1;
+}
 
+.child- p{
+    font-family: futura;
+    font-weight: bold;
+    font-size: 2.6vw;
+}
 
+.row1{
+    background-color: #F7F7F7;
+    display: flex;
+    width: 100%;
 
+}
 
+.row2{
+    background-color: #F7F7F7;
+    display: flex;
+    width: 100%;
+}
+
+.child- #text2{
+    font-size: 2.5vw;
+}
+
+.row3{
+    background-color: #F7F7F7;
+    display: flex;
+    width: 100%;
+}
+
+.row4{
+    background-color: #F7F7F7;
+    display: flex;
+    width: 100%;
+}
+
+.child- #text3{
+    font-size: 2vw;
+}
