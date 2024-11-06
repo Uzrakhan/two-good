@@ -91,7 +91,7 @@ function loadinganimation() {
             start: "top 80%",
             toggleActions: "play none none none"
         },
-        opacity: 0,
+        opacity: 0.5,
         y: 50,
         duration: 1.5,
         ease: "power2.out"
@@ -104,7 +104,7 @@ function loadinganimation() {
             start: "top 80%",
             toggleActions: "play none none none"
         },
-        opacity: 0,
+        opacity: 0.5,
         y: 50,
         duration: 3,
         ease: "power2.out"
@@ -121,9 +121,9 @@ function loadinganimation() {
             start: "top 80%",
             toggleActions: "play none none none"
         },
-        opacity: 0,
+        opacity: 0.5,
         y: 50,
-        duration: 6,
+        duration: 3,
         ease: "power2.out"
     })
 
@@ -135,9 +135,9 @@ function loadinganimation() {
             start: "top 80%",
             toggleActions: "play none none none"
         },
-        opacity: 0,
+        opacity: 0.5,
         y: 50,
-        duration: 6.5,
+        duration: 6,
         ease: "power2.out"
     })
 
@@ -148,9 +148,9 @@ function loadinganimation() {
             start: "top 80%",
             toggleActions: "play none none none"
         },
-        opacity: 0,
+        opacity: 0.5,
         y: 50,
-        duration: 8,
+        duration: 12,
         ease: "power2.out"
     })
 
@@ -161,9 +161,9 @@ function loadinganimation() {
             start: "top 80%",
             toggleActions: "play none none none"
         },
-        opacity: 0,
+        opacity: 0.5,
         y: 50,
-        duration: 9,
+        duration: 12,
         ease: "power2.out"
     })
 
@@ -174,7 +174,7 @@ function loadinganimation() {
             start: "top 80%",
             toggleActions: "play none none none"
         },
-        opacity: 0,
+        opacity: 0.5,
         y: 50,
         duration: 5,
         ease: "power2.out"
@@ -187,11 +187,173 @@ function loadinganimation() {
             start: "top 90%",
             toggleActions: "play none none none"
         },
-        opacity: 0,
+        opacity: 0.5,
         y: 50,
-        duartion: 10,
+        duration: 5,
         ease: "power2.out"
     })
+
+    gsap.from(".child- #text3",{
+        scrollTrigger:{
+            trigger: ".child-",
+            scroller: "#main",
+            start: "top 80%",
+            toggleActions: "play none none none"
+        },
+        opacity: 0.5,
+        y: 50,
+        duration: 5,
+        ease: "power2.out"
+    })
+
+    gsap.from(".row5 .child- img",{
+        scrollTrigger:{
+            trigger: ".row5",
+            scroller: "#main",
+            start: "top 90%",
+            toggleActions: "play none none none"
+        },
+        opacity: 0.5,
+        y: 50,
+        duration: 5,
+        ease: "power2.out"
+    })
+
+
+    gsap.from(".row6 .child- img",{
+        scrollTrigger:{
+            trigger: ".row6",
+            scroller: "#main",
+            start: "top 90%",
+            toggleActions: "play none none none"
+        },
+        opacity: 0.5,
+        y: 50,
+        duration: 5,
+        ease: "power2.out"
+    })
+    
+
+    gsap.from(".row7 .child- img",{
+        scrollTrigger:{
+            trigger: ".row7",
+            scroller: "#main",
+            start: "top 90%",
+            toggleActions: "play none none none"
+        },
+        opacity: 0.5,
+        y: 50,
+        duration: 5,
+        ease: "power2.out"
+    })
+
+    gsap.from(".row8 .child- img",{
+        scrollTrigger:{
+            trigger: ".row8",
+            scroller: "#main",
+            start: "top 90%",
+            toggleActions: "play none none none"
+        },
+        opacity: 0.5,
+        y: 50,
+        duration: 5,
+        ease: "power2.out"
+    })
+
+    gsap.from(".row9 .child- img",{
+        scrollTrigger:{
+            trigger: ".row9",
+            scroller: "#main",
+            start: "top 90%",
+            toggleActions: "play none none none"
+        },
+        opacity: 0.5,
+        y: 50,
+        duration: 5,
+        ease: "power2.out"
+    })
+
+    gsap.from(".row10 .child- img",{
+        scrollTrigger:{
+            trigger: ".row10",
+            scroller: "#main",
+            start: "top 90%",
+            toggleActions: "play none none none"
+        },
+        opacity: 0.5,
+        y: 50,
+        duration: 5,
+        ease: "power2.out"
+    })
+
+    gsap.from(".row11 .child- img",{
+        scrollTrigger:{
+            trigger: ".row11",
+            scroller: "#main",
+            start: "top 90%",
+            toggleActions: "play none none none"
+        },
+        opacity: 0.5,
+        y: 50,
+        duration: 5,
+        ease: "power2.out"
+    })
+
+
+    gsap.from(".row12 .child- img",{
+        scrollTrigger:{
+            trigger: ".row12",
+            scroller: "#main",
+            start: "top 90%",
+            toggleActions: "play none none none"
+        },
+        opacity: 0.9,
+        y: 50,
+        duration: 5,
+        ease: "power2.out"
+    })
+
+
+    gsap.from(".row13 .child- img",{
+        scrollTrigger:{
+            trigger: ".row13",
+            scroller: "#main",
+            start: "top 90%",
+            toggleActions: "play none none none"
+        },
+        opacity: 0.5,
+        y: 50,
+        duration: 5,
+        ease: "power2.out"
+    })
+
+    gsap.from(".row14 .child- img",{
+        scrollTrigger:{
+            trigger: ".row14",
+            scroller: "#main",
+            start: "top 90%",
+            toggleActions: "play none none none"
+        },
+        opacity: 0.9,
+        y: 50,
+        duration: 5,
+        ease: "power2.out"
+    })
+
+    gsap.from(".row15 .child- img",{
+        scrollTrigger:{
+            trigger: ".row15",
+            scroller: "#main",
+            start: "top 90%",
+            toggleActions: "play none none none"
+        },
+        opacity: 0.9,
+        y: 50,
+        duration: 5,
+        ease: "power2.out"
+    })
+
+    
     
 }
 loadinganimation();
@@ -223,3 +385,32 @@ function cursorAnimation() {
 
 cursorAnimation();
 
+function convertToInput() {
+    const label = document.getElementById('editableLabel');
+    const input = document.getElementById('editableInput');
+    const svg = document.getElementById('editableSvg');
+
+
+    // Hide the label and show the input
+    label.style.display = 'none';
+    svg.style.display = 'none'; // Hide the SVG
+    input.style.display = 'block';
+
+    // Focus on the input field
+    input.focus()
+}
+
+
+function toggleInput() {
+    const label = document.getElementById('editableLabel');
+    const input = document.getElementById('editableInput');
+    const svg = document.getElementById('editableSvg');
+
+    // If the input field is visible, hide it and show the label
+    if (input.style.display === 'block') {
+        label.style.display = 'block';
+        input.style.display = 'none';
+        svg.style.display = 'block';
+    }
+
+}
